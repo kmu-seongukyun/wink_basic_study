@@ -1,0 +1,177 @@
+.header {
+    position: relative;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.header_wrap {
+    height: 120px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.header_link {
+    margin-top: 55px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.header_link > a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 .2em;
+    padding: 1px 8px 0px 10px;
+}
+
+.header_link > a:active {
+    color: rgb(123, 124, 128);
+}
+
+h1.logo{
+    align-self: center;
+}
+
+h1.logo img {
+    width: 169px;
+    height: 31px;
+    
+}
+
+ul li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+#gnb {
+    width: 1000px;
+    height: 55px;
+    line-height: 22px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#gnb_menu {
+    padding-left: 0;
+}
+
+#gnb_menu > li {
+    font-size: 14px; 
+    font-weight: 600;
+}
+
+#gnb >ul> li {
+    float: left;
+    width: 12%;
+    position: relative;
+
+}
+
+#gnb >ul> li> ul {
+    position: absolute;
+    display: none;
+}
+
+.sub_menu{
+    width: 120px;
+    padding-left: 0;
+}
+
+.sub_menu > li {
+    font-size: 14px;
+}
+
+#gnb >ul>li:hover >ul{
+    display: block;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+/* navbar 반응형 */
+@media screen and (max-width: 700px) {
+    #gnb {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0;
+      }
+      
+    #gnb_menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #gnb_menu li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#slideshow {
+    width: 1030px;
+    height: 576px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+     position: absolute;
+     width: 3090px;
+     transition: 0.5s ease-out;
+     padding-left: 0px;
+ }
+
+.slides li {
+      float: left;
+}
+
+.slides li:not(:last-child) {
+       float: left;
+}
+
+img {
+    width: 1030px;
+    height: 576px;
+}
+
+.controller span {
+    color: rgb(123, 124, 128);
+    position: absolute;
+    text-align: center;
+    padding: 10px 20px;
+    top: 50%;
+    font-size: 2em;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+}
+
+.next {
+    right: 10px;
+}
+
+.welcome-area {
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    padding: 55px 0;
+}
+
+.title > h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #545557;
+}
+
+.subtitle > h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #7b7c80;
+}
